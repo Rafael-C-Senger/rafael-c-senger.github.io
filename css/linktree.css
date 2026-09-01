@@ -24,9 +24,10 @@ body { /* Corpo do Linktree*/
     align-items: center;
     margin: 2rem;
     padding: 1rem;
-    border: solid;
+    border: solid 1px;
     border-radius: 20px;
     border-color: white;
+    box-shadow: 0.5rem 0.5rem 0.5rem black;
 
 }
 

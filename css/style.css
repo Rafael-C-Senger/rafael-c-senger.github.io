@@ -1,0 +1,164 @@
+:root {
+    --cor-fundo-gradiente: linear-gradient(180deg, rgba(11, 37, 69, 1) 0%, rgba(19, 64, 116, 1) 50%, rgba(141, 169, 196, 1) 100%);
+    --cor-card: rgba(255, 255, 255, 0.07);
+    --cor-card-borda: rgba(255, 255, 255, 0.15);
+    --cor-fonte: #f5f5f5;
+    --cor-destaque: #8da9c4;
+    --cor-tag: #134074;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--cor-fundo-gradiente);
+    background-attachment: fixed;
+    color: var(--cor-fonte);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Header / Perfil */
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--cor-card);
+    border: 1px solid var(--cor-card-borda);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(5px);
+}
+
+#foto-perfil {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 3px solid var(--cor-destaque);
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+#nome {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.subtitulo {
+    font-size: 1rem;
+    color: var(--cor-destaque);
+    margin-bottom: 1rem;
+}
+
+.contatos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.contatos a {
+    color: var(--cor-fonte);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contatos a:hover {
+    color: var(--cor-destaque);
+}
+
+/* Seções e Cards */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--cor-card);
+    border: 1px solid var(--cor-card-borda);
+    border-radius: 16px;
+    padding: 1.5rem;
+    backdrop-filter: blur(5px);
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    color: var(--cor-destaque);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--cor-card-borda);
+    padding-bottom: 0.5rem;
+}
+
+.item {
+    margin-bottom: 1.2rem;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.item h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.instituicao {
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.periodo {
+    font-size: 0.85rem;
+    opacity: 0.75;
+}
+
+.lista-detalhes {
+    margin-top: 0.5rem;
+    margin-left: 1.2rem;
+}
+
+.lista-detalhes li {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+
+/* Tags de Habilidades */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tags span {
+    background: var(--cor-tag);
+    border: 1px solid var(--cor-card-borda);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
