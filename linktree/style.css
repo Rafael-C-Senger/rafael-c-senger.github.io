@@ -1,0 +1,144 @@
+:root {
+    --cor-fundo: linear-gradient(180deg,rgba(11, 37, 69, 1) 10%, rgba(19, 64, 116, 1) 60%, rgba(141, 169, 196, 1) 100%);
+    --cor-fonte: whitesmoke;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body { /* Corpo do Linktree*/
+    background: var(--cor-fundo);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--cor-fonte);
+}
+
+.perfil { /* Organização do header. Contem a imagem, nome e uma frase*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+    border: solid;
+    border-radius: 20px;
+    border-color: white;
+
+}
+
+#foto-perfil { /* Imagem de perfil do header*/
+    width: 7rem;
+    border: solid white;
+    border-radius: 100%;
+}
+
+#nome { /*Nome no header*/
+    font-family: sans-serif;
+    font-size: 1.2rem;   
+}
+
+.perfil p {
+    font-size: 0.9rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.links-principais li {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    border: solid 2px;
+    align-items: center;
+    
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+
+    box-shadow: 3px 3px 3px  black;
+}
+
+.links-principais ul {
+    padding: 1rem;
+    margin: 0;
+}
+
+.links-principais li a {
+    font-size: 1rem;
+    color: var(--cor-fonte);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    padding: 0.8rem;
+}
+
+.links-principais li a i {
+    
+    padding-right: 2rem;
+    border-right: 2px solid white;
+    margin-right: 30%;
+}
+
+.redes-sociais ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+    height: 5rem;
+
+}
+
+.redes-sociais li {
+    list-style: none;
+    padding: 1rem;
+
+}
+
+.redes-sociais li a  {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+}
+
+footer {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.links-principais ul :hover  {
+    cursor: pointer;
+    transition: all 1.3s ease;
+    background: var(--cor-fonte);
+    color: rgba(11, 37, 69, 1);
+    border-radius: 10px;
+}
+
+.links-principais ul :hover i {
+    border-color: rgba(11, 37, 69, 1);
+    transition: all 1.3s ease;
+}
+
+#instagram :hover{
+    cursor: pointer;
+    color: #e1306c ;
+    
+}
+
+@media (min-width: 350px) {
+    body {
+        max-width: 350px;
+        justify-self: center;
+    }
+    
+}
