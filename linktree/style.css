@@ -135,8 +135,19 @@ footer {
     
 }
 
+#spotfy :hover {
+    cursor: pointer;
+    color: rgb(15, 105, 1);
+}
+
+#discord :hover{
+    cursor: pointer;
+    color: rgb(13, 107, 157);
+}
+
 @media (min-width: 350px) {
     body {
+        display: grid;
         max-width: 350px;
         justify-self: center;
     }
